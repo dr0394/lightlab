@@ -1,18 +1,15 @@
 /**
- * Home Page - DJ Leon Style Design
- * LightLab Lichtdesign Onepager
+ * Home Page - Shockwave DJ Event Brand
+ * Premium Club/Festival Landing Page
  */
 
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import MarqueeSection from "@/components/MarqueeSection";
 import AboutSection from "@/components/AboutSection";
-import ServicesSection from "@/components/ServicesSection";
-import AdvantagesSection from "@/components/AdvantagesSection";
-import ProcessSection from "@/components/ProcessSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import RentalSection from "@/components/RentalSection";
-import ContactSection from "@/components/ContactSection";
+import ArtistsSection from "@/components/ArtistsSection";
+import EventsSection from "@/components/EventsSection";
+import GallerySection from "@/components/GallerySection";
+import BookingSection from "@/components/BookingSection";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 
@@ -22,14 +19,11 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <MarqueeSection />
-        <ServicesSection />
         <AboutSection />
-        <AdvantagesSection />
-        <ProcessSection />
-        <ProjectsSection />
-        <RentalSection />
-        <ContactSection />
+        <ArtistsSection />
+        <EventsSection />
+        <GallerySection />
+        <BookingSection />
       </main>
       <Footer />
       <CookieConsent />

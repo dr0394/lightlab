@@ -1,6 +1,6 @@
 /**
- * Header Component - Silver & Purple Premium Design
- * Sticky navigation with logo and menu button
+ * Header Component - Shockwave DJ Event Brand
+ * Sticky navigation with Cyan/Orange Neon styling
  */
 
 import { useState, useEffect } from "react";
@@ -8,12 +8,11 @@ import { X, Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { href: "#about", label: "Über uns" },
-  { href: "#services", label: "Leistungen" },
-  { href: "#advantages", label: "Vorteile" },
-  { href: "#process", label: "Ablauf" },
-  { href: "#projects", label: "Projekte" },
-  { href: "#contact", label: "Kontakt" },
+  { href: "#about", label: "About" },
+  { href: "#artists", label: "The Crew" },
+  { href: "#events", label: "Events" },
+  { href: "#gallery", label: "Gallery" },
+  { href: "#booking", label: "Booking" },
 ];
 
 export default function Header() {
@@ -40,12 +39,12 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "py-3 bg-black/90 backdrop-blur-md"
+          ? "py-3 bg-black/90 backdrop-blur-md border-b border-cyan/20"
           : "py-5 bg-transparent"
       }`}
     >
       <div className="container flex items-center justify-between">
-        {/* Logo */}
+        {/* Brand Name */}
         <a
           href="#"
           onClick={(e) => {
@@ -54,17 +53,18 @@ export default function Header() {
           }}
           className="flex items-center group"
         >
-          <img 
-            src="/images/logo.png" 
-            alt="LightLab Lichtdesign Berlin" 
-            className="h-14 md:h-20 w-auto object-contain"
-          />
+          <span className="font-display text-2xl md:text-3xl tracking-wider" style={{
+            color: '#00FFFF',
+            textShadow: '0 0 20px rgba(0, 255, 255, 0.6)'
+          }}>
+            SHOCKWAVE
+          </span>
         </a>
 
         {/* Desktop Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="flex items-center gap-2 text-[#9B59B6] hover:text-[#C0C0C0] transition-colors font-display text-lg tracking-wider"
+          className="flex items-center gap-2 text-cyan hover:text-[#FF6B00] transition-colors font-display text-lg tracking-wider"
         >
           <Plus className={`w-5 h-5 transition-transform duration-300 ${isMobileMenuOpen ? 'rotate-45' : ''}`} />
           MENU
@@ -90,7 +90,10 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
                     onClick={() => scrollToSection(link.href)}
-                    className="font-display text-4xl md:text-6xl text-white hover:text-[#9B59B6] transition-colors tracking-wider"
+                    className="font-display text-4xl md:text-6xl text-white hover:text-cyan transition-colors tracking-wider"
+                    style={{
+                      textShadow: '0 0 20px rgba(0, 255, 255, 0.3)'
+                    }}
                   >
                     {link.label.toUpperCase()}
                   </motion.button>
@@ -99,17 +102,17 @@ export default function Header() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: navLinks.length * 0.1 }}
-                  onClick={() => scrollToSection("#contact")}
+                  onClick={() => scrollToSection("#booking")}
                   className="mt-8 btn-neon-filled"
                 >
-                  Termin buchen
+                  Booking Anfragen
                 </motion.button>
               </nav>
-              
+
               {/* Close Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="absolute top-6 right-6 text-[#9B59B6] hover:text-[#C0C0C0] transition-colors"
+                className="absolute top-6 right-6 text-cyan hover:text-[#FF6B00] transition-colors"
               >
                 <X size={32} />
               </button>

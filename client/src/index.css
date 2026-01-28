@@ -41,76 +41,76 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  /* Silver & Purple Accent - Premium Style */
-  --color-silver: #C0C0C0;
-  --color-silver-light: #E8E8E8;
-  --color-silver-dark: #A0A0A0;
-  --color-purple: #9B59B6;
-  --color-purple-light: #BB8FCE;
-  --color-purple-dark: #7D3C98;
+  /* Shockwave Event Branding - Cyan & Orange Neon */
+  --color-cyan: #00FFFF;
+  --color-cyan-light: #5FFFFF;
+  --color-cyan-dark: #00CCCC;
+  --color-orange: #FF6B00;
+  --color-orange-light: #FF8533;
+  --color-orange-dark: #CC5500;
   
   /* Font Families - Bold Condensed Style */
   --font-display: "Bebas Neue", "Impact", sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 }
 
-/* Silver & Purple Dark Theme */
+/* Shockwave Event Theme - Cyan & Orange Neon */
 :root {
   --radius: 0px;
-  
+
   /* Pure Black Base */
   --background: #000000;
   --foreground: #ffffff;
-  
+
   /* Card */
   --card: #0a0a0a;
   --card-foreground: #ffffff;
-  
+
   /* Popover */
   --popover: #0a0a0a;
   --popover-foreground: #ffffff;
-  
-  /* Primary - Purple */
-  --primary: #9B59B6;
-  --primary-foreground: #ffffff;
-  
-  /* Secondary - Silver */
+
+  /* Primary - Cyan */
+  --primary: #00FFFF;
+  --primary-foreground: #000000;
+
+  /* Secondary - Orange */
   --secondary: #1a1a1a;
-  --secondary-foreground: #C0C0C0;
-  
+  --secondary-foreground: #FF6B00;
+
   /* Muted */
   --muted: #1a1a1a;
-  --muted-foreground: #a0a0a0;
-  
-  /* Accent - Purple */
-  --accent: #9B59B6;
+  --muted-foreground: #808080;
+
+  /* Accent - Orange */
+  --accent: #FF6B00;
   --accent-foreground: #ffffff;
-  
+
   /* Destructive */
   --destructive: #ff4444;
   --destructive-foreground: #ffffff;
-  
-  /* Border & Input - Silver */
-  --border: #C0C0C0;
+
+  /* Border & Input - Cyan */
+  --border: #00FFFF;
   --input: #1a1a1a;
-  --ring: #9B59B6;
-  
+  --ring: #00FFFF;
+
   /* Charts */
-  --chart-1: #9B59B6;
-  --chart-2: #BB8FCE;
-  --chart-3: #7D3C98;
-  --chart-4: #C0C0C0;
-  --chart-5: #E8E8E8;
-  
+  --chart-1: #00FFFF;
+  --chart-2: #5FFFFF;
+  --chart-3: #FF6B00;
+  --chart-4: #FF8533;
+  --chart-5: #ffffff;
+
   /* Sidebar */
   --sidebar: #000000;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #9B59B6;
-  --sidebar-primary-foreground: #ffffff;
+  --sidebar-primary: #00FFFF;
+  --sidebar-primary-foreground: #000000;
   --sidebar-accent: #1a1a1a;
   --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #C0C0C0;
-  --sidebar-ring: #9B59B6;
+  --sidebar-border: #00FFFF;
+  --sidebar-ring: #00FFFF;
 }
 
 @layer base {
@@ -143,7 +143,7 @@
     scroll-behavior: smooth;
   }
   
-  /* Custom scrollbar - Silver/Purple style */
+  /* Custom scrollbar - Cyan/Orange Neon style */
   ::-webkit-scrollbar {
     width: 6px;
   }
@@ -151,11 +151,11 @@
     background: #000000;
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #9B59B6, #C0C0C0);
+    background: linear-gradient(180deg, #00FFFF, #FF6B00);
     border-radius: 0;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #BB8FCE, #E8E8E8);
+    background: linear-gradient(180deg, #5FFFFF, #FF8533);
   }
 }
 
@@ -188,15 +188,15 @@
     }
   }
   
-  /* Silver Button - Outline Style */
+  /* Cyan Button - Outline Style */
   .btn-neon {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    border: 2px solid #C0C0C0;
+    border: 2px solid #00FFFF;
     background: transparent;
-    color: #C0C0C0;
+    color: #00FFFF;
     font-family: var(--font-display);
     font-size: 1rem;
     letter-spacing: 0.1em;
@@ -204,20 +204,20 @@
     transition: all 0.3s ease;
   }
   .btn-neon:hover {
-    background: #9B59B6;
-    border-color: #9B59B6;
-    color: #ffffff;
-    box-shadow: 0 0 30px rgba(155, 89, 182, 0.5);
+    background: #00FFFF;
+    border-color: #00FFFF;
+    color: #000000;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.3);
   }
-  
-  /* Purple Button - Filled Style */
+
+  /* Orange Button - Filled Style */
   .btn-neon-filled {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    border: 2px solid #9B59B6;
-    background: #9B59B6;
+    border: 2px solid #FF6B00;
+    background: #FF6B00;
     color: #ffffff;
     font-family: var(--font-display);
     font-size: 1rem;
@@ -227,33 +227,41 @@
   }
   .btn-neon-filled:hover {
     background: transparent;
-    color: #9B59B6;
-    box-shadow: 0 0 30px rgba(155, 89, 182, 0.5);
+    color: #FF6B00;
+    box-shadow: 0 0 30px rgba(255, 107, 0, 0.6), 0 0 60px rgba(255, 107, 0, 0.3);
   }
   
-  /* Outline Text Effect - Silver */
+  /* Outline Text Effect - Cyan */
   .text-outline {
     color: transparent;
-    -webkit-text-stroke: 2px #C0C0C0;
-    text-stroke: 2px #C0C0C0;
+    -webkit-text-stroke: 2px #00FFFF;
+    text-stroke: 2px #00FFFF;
   }
   .text-outline-white {
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
     text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
-  
-  /* Purple Glow Text */
+
+  /* Cyan Glow Text */
   .text-neon {
-    color: #9B59B6;
-    text-shadow: 0 0 10px rgba(155, 89, 182, 0.5),
-                 0 0 20px rgba(155, 89, 182, 0.3),
-                 0 0 40px rgba(155, 89, 182, 0.2);
+    color: #00FFFF;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8),
+                 0 0 20px rgba(0, 255, 255, 0.5),
+                 0 0 40px rgba(0, 255, 255, 0.3);
   }
-  
-  /* Silver Text */
-  .text-silver {
-    color: #C0C0C0;
+
+  /* Orange Glow Text */
+  .text-neon-orange {
+    color: #FF6B00;
+    text-shadow: 0 0 10px rgba(255, 107, 0, 0.8),
+                 0 0 20px rgba(255, 107, 0, 0.5),
+                 0 0 40px rgba(255, 107, 0, 0.3);
+  }
+
+  /* Cyan Text */
+  .text-cyan {
+    color: #00FFFF;
   }
   
   /* Marquee Animation */
@@ -271,10 +279,10 @@
     100% { transform: translateX(-50%); }
   }
   
-  /* Purple Section Background */
+  /* Cyan/Orange Section Background */
   .bg-neon-section {
-    background: linear-gradient(135deg, #9B59B6 0%, #7D3C98 100%);
-    color: #ffffff;
+    background: linear-gradient(135deg, #00FFFF 0%, #FF6B00 100%);
+    color: #000000;
   }
   
   /* Feature Card - Image Background */
@@ -300,19 +308,19 @@
     padding: 1.5rem;
   }
   
-  /* Glass Card - Dark Style with Purple tint */
+  /* Glass Card - Dark Style with Cyan tint */
   .glass-card {
     background: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(155, 89, 182, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.2);
   }
-  
-  /* Hover Glow Effect - Purple */
+
+  /* Hover Glow Effect - Cyan/Orange */
   .hover-glow {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   .hover-glow:hover {
-    box-shadow: 0 0 40px rgba(155, 89, 182, 0.3);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.4), 0 0 60px rgba(255, 107, 0, 0.2);
     transform: translateY(-2px);
   }
   
