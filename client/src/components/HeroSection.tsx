@@ -32,9 +32,9 @@ export default function HeroSection() {
           muted
           playsInline
           className="w-full h-full object-cover"
-          poster="/images/project-concert-1.jpg"
+          poster="https://i.imgur.com/kd7AMhE.jpeg"
         >
-          <source src="/shockwave_hero.mp4" type="video/mp4" />
+          <source src="https://i.imgur.com/suhMuqd.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay with gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />

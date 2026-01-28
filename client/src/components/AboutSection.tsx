@@ -88,7 +88,7 @@ export default function AboutSection() {
               className="aspect-[3/4] overflow-hidden relative"
             >
               <img
-                src="/images/project-concert-2.jpg"
+                src="https://i.imgur.com/wB7zV1V.jpeg"
                 alt="Shockwave Event"
                 className="w-full h-full object-cover"
               />
@@ -101,7 +101,7 @@ export default function AboutSection() {
               className="aspect-[3/4] overflow-hidden mt-12 relative"
             >
               <img
-                src="/images/project-event-1.jpg"
+                src="https://i.imgur.com/G5wxs0d.jpeg"
                 alt="Shockwave Crowd"
                 className="w-full h-full object-cover"
               />

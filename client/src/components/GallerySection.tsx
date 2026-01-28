@@ -8,12 +8,14 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const galleryImages = [
-  { src: "/images/project-concert-1.jpg", alt: "Shockwave Event 1" },
-  { src: "/images/project-concert-2.jpg", alt: "Shockwave Event 2" },
-  { src: "/images/project-event-1.jpg", alt: "Shockwave Event 3" },
-  { src: "/images/project-festival-1.jpg", alt: "Shockwave Festival" },
-  { src: "/images/project-stage-1.jpg", alt: "Shockwave Stage" },
-  { src: "/images/project-concert-1.jpg", alt: "Shockwave Crowd" },
+  { src: "https://i.imgur.com/wB7zV1V.jpeg", alt: "Shockwave Event 1" },
+  { src: "https://i.imgur.com/G5wxs0d.jpeg", alt: "Shockwave Event 2" },
+  { src: "https://i.imgur.com/XCiIjKr.jpeg", alt: "Shockwave Event 3" },
+  { src: "https://i.imgur.com/agao1Lp.jpeg", alt: "Shockwave Festival" },
+  { src: "https://i.imgur.com/S3ArS3g.jpeg", alt: "Shockwave Stage" },
+  { src: "https://i.imgur.com/dStIUHx.jpeg", alt: "Shockwave Crowd" },
+  { src: "https://i.imgur.com/dC56pp0.jpeg", alt: "Shockwave Night" },
+  { src: "https://i.imgur.com/kd7AMhE.jpeg", alt: "Shockwave Energy" },
 ];
 
 export default function GallerySection() {

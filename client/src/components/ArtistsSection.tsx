@@ -10,25 +10,25 @@ import { Instagram, Music } from "lucide-react";
 
 const artists = [
   {
-    name: "DJ PULSE",
-    role: "Resident DJ",
-    genre: "Techno / Hard Techno",
-    instagram: "https://instagram.com/djpulse",
-    image: "/images/project-concert-1.jpg",
+    name: "THE SHOCKWAVE DJs",
+    role: "Founders & Resident DJs",
+    genre: "Techno / Hard Techno / Bass House",
+    instagram: "https://instagram.com/shockwave_graz",
+    image: "https://i.imgur.com/gtyD3dl.jpeg",
   },
   {
-    name: "NEONIX",
-    role: "Special Guest",
-    genre: "Progressive House",
-    instagram: "https://instagram.com/neonix",
-    image: "/images/project-concert-2.jpg",
+    name: "SPECIAL GUESTS",
+    role: "Rotating Lineup",
+    genre: "Various Genres",
+    instagram: "https://instagram.com/shockwave_graz",
+    image: "https://i.imgur.com/XCiIjKr.jpeg",
   },
   {
-    name: "BASS COMMANDER",
-    role: "Resident DJ",
-    genre: "Bass House / Dubstep",
-    instagram: "https://instagram.com/basscommander",
-    image: "/images/project-festival-1.jpg",
+    name: "UPCOMING TALENTS",
+    role: "Support Acts",
+    genre: "Electronic / House",
+    instagram: "https://instagram.com/shockwave_graz",
+    image: "https://i.imgur.com/agao1Lp.jpeg",
   },
 ];
 

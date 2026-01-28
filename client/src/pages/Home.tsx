@@ -6,6 +6,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import VibesSection from "@/components/VibesSection";
 import ArtistsSection from "@/components/ArtistsSection";
 import EventsSection from "@/components/EventsSection";
 import GallerySection from "@/components/GallerySection";
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
+        <VibesSection />
         <ArtistsSection />
         <EventsSection />
         <GallerySection />
